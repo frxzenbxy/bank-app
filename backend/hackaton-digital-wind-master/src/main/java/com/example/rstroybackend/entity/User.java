@@ -38,7 +38,7 @@ public class User extends BaseEntity {
     private Set<Role> roles;
 
     @ManyToOne
-    @JoinColumn(name="id", nullable=true)
+    @JoinColumn(name="product_id", nullable=true)
     @JsonView(SecurityViews.User.class)
     private Product product;
 
